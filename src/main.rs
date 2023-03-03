@@ -1,3 +1,8 @@
+use primitives_cli::cli;
+
 fn main() {
-    println!("Hello, world!");
+    if let Err(e) = cli::run() {
+        eprintln!("Error: {e}");
+        std::process::exit(1)
+    }
 }
