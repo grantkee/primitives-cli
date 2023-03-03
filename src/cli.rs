@@ -58,7 +58,6 @@ pub fn run() -> eyre::Result<()> {
 #[derive(Parser, Debug)]
 enum Cli {
     /// H128	Fixed-size uninterpreted hash type with 16 bytes (128 bits) size.
-    // #[command(name = "h128")]
     H128,
     /// H160	Fixed-size uninterpreted hash type with 20 bytes (160 bits) size.
     H160,
